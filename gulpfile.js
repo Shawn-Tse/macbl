@@ -11,17 +11,16 @@ gulp.task('less',function(){
 	.pipe(less())
 	.pipe(minifyCSS())
 	.pipe(concat('style.css'))
-	.pipe(gulp.dest('./css'))
-})
+	.pipe(gulp.dest('./css'));
+});
 
 gulp.task('js',function(){
 	return gulp.src('./javascript/*.js')
-
 	.pipe(uglify())
-	.pipe(gulp.dest('./js'))
-})
+	.pipe(gulp.dest('./js'));
+});
 
 gulp.task('watch',function(){
 	gulp.watch('./less/*.less',['less']);
 	gulp.watch('./javascript/*.js',['js']);
-})
+});

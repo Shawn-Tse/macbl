@@ -67,8 +67,8 @@
 				<h3 class="title">图形设计用</h3>
 				<a href="#" class="view-more">查看全部</a>
 			</div>
-			<ul class="app-list">
-				<li class="app">
+			<ul class="app-list clearfix">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.2,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app1.png" class="app-img">
 						<div class="app-disc">
@@ -86,7 +86,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.2,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app2.png" class="app-img">
 						<div class="app-disc">
@@ -104,7 +104,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.4,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app3.png" class="app-img">
 						<div class="app-disc">
@@ -122,7 +122,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.4,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app4.png" class="app-img">
 						<div class="app-disc">
@@ -140,7 +140,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.6,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app1.png" class="app-img">
 						<div class="app-disc">
@@ -158,7 +158,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.6,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app2.png" class="app-img">
 						<div class="app-disc">
@@ -176,7 +176,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.8,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app3.png" class="app-img">
 						<div class="app-disc">
@@ -194,7 +194,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="app">
+				<li class="app" data-animation="{'oDuration':1,'tDuration':1.2,'dir':'y','delay':0.8,'distance':60}">
 					<a href="#" class="app-link clearfix">
 						<img src="./tmp/app4.png" class="app-img">
 						<div class="app-disc">
@@ -218,13 +218,27 @@
 	<div class="pn-wrapper">
 		<div class="pagination clearfix"></div>
 	</div>
-
 	<div class="footer">
 		<h4>Copyright © 2017 Macbl.com All rights reserved</h4>
 		<p>版权声明：本站所有软件均来收集于网络，仅供学习使用，请支持正版。本站并不以盈利为目的，如果相关内容涉嫌对您造成侵权，请发邮件至service@macbl.com，我们会在第一时间将涉及版权的内容进行删除。</p>
 	</div>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/waypoints.js"></script>
+	<script type="text/javascript" src="./js/inview.js"></script>
 	<script type="text/javascript" src="./js/jquery.pagination.js"></script>
 	<script type="text/javascript" src="./js/public.js"></script>
+<!-- 	<script type="text/javascript">
+		var num = $('.app').length;
+		console.log(num);
+		$('.pagination').pagination({
+			totalData: num,
+			showData: 3,
+			coping: true,
+			callback:function(api){
+				var current_page = api.getCurrent();
+				console.log(current_page);
+			}
+		});
+	</script> -->
 </body>
 </html>
