@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<title>Macbl APPdetails</title>
 	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/svg.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -51,24 +51,24 @@
 						<div class="swiper-container img-container">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<a href="./tmp/prev-img1.png" data-lightbox="roadtrip">
+									<a href="./tmp/prev-img1.png" class="prev-img" data-fancybox="group">
 										<img src="./tmp/prev-img1.png" alt="" />
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="./tmp/prev-img2.png" data-lightbox="roadtrip">
+									<a href="./tmp/prev-img2.png" class="prev-img" data-fancybox="group">
 										<img src="./tmp/prev-img2.png" alt="" />
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="./tmp/prev-img3.png" data-lightbox="roadtrip">
+									<a href="./tmp/prev-img3.png" class="prev-img" data-fancybox="group">
 										<img src="./tmp/prev-img3.png" alt="" />
 									</a>
 								</div>
 							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
 						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 					<div class="app-describe">
 						<h3>应用介绍</h3>
@@ -156,7 +156,7 @@
 			<div class="table-cell">
 				<div class="sidebar">
 					<div class="dl-wrapper">
-						<div class="dl-count">123,456,789</div>
+						<div class="dl-count" data-count="123456789"></div>
 						<p>下载次数</p>
 					</div>
 					<div class="base-info clearfix">
@@ -187,7 +187,10 @@
 						</div>
 						<div class="info-row">
 							<span class="row-left">标签</span>
-							<a href="#" class="row-r-blue">Logo、设计、图形</a>
+							<a href="#" class="row-r-blue">Logo</a>
+							<a href="#" class="row-r-blue">设计</a>
+							<a href="#" class="row-r-blue">图形</a>
+
 						</div>
 					</div>
 					<div class="app-list">
@@ -195,7 +198,7 @@
 						<ul>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app1.png" class="app-logo">
 									<div class="app-syn">
 										<p>
 											Logoist 2 2.6.1 方便快的设计软件。
@@ -210,7 +213,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app2.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -222,7 +225,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app3.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -234,7 +237,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app4.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -246,7 +249,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app5.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -263,7 +266,7 @@
 						<ul>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app1.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -275,7 +278,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app2.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -287,7 +290,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app3.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -299,7 +302,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app4.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -311,7 +314,7 @@
 							</li>
 							<li class="app-item clearfix">
 								<a href="#">
-									<img src="./tmp/app-logo1.png" class="app-logo">
+									<img src="./tmp/app5.png" class="app-logo">
 									<div class="app-syn">
 										<p>Logoist 2 2.6.1 方便快的设计软件</p>
 										<div>
@@ -334,7 +337,7 @@
 	</div>
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/swiper.min.js"></script>
-	<script type="text/javascript" src="./js/lightbox.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="./js/public.js"></script>
 </body>
 </html>
